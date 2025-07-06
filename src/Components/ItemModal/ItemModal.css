@@ -1,0 +1,95 @@
+.preview-image-content {
+  background-color: white;
+  max-width: 498px;
+  height: 610px;
+  width: 100%;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.image-preview {
+  border-radius: 16px;
+  max-width: 498px;
+  height: 498px;
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+}
+
+.preview-image-close {
+  background-image: url("../../Images/preview-close.svg");
+  background-color: transparent;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: -20px;
+  height: 20px;
+  width: 20px;
+  border: none;
+  padding: 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+.preview-image-close:hover {
+  cursor: pointer;
+}
+
+.preview-image-name {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 20px 32px 15px;
+}
+
+.delete-button {
+  background-color: #fff;
+  border: none;
+  color: #ff4d00;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 0;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+  color: #ff4d00;
+}
+
+.preview-image_info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 32px 0;
+  font-family: "Cabinet Grotesk", sans-serif;
+}
+
+.preview-image_purchase-button {
+  width: 105px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  transition: opacity 0.12s ease-in 0s;
+}
+
+.preview-image_purchase-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.preview-image-weather-type {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+}

@@ -1,0 +1,255 @@
+.newMain {
+  background-color: #fdf8ef;
+  }
+
+.newMain__title {
+  display: flex;
+  justify-content: center;
+}
+
+.newMain__title-text {
+  font-family: KarlaItalic, sans-serif;
+  font-size: 65px;
+  margin-bottom: 40px;
+}
+
+.newMain__title-description {
+  font-family: KarlaRegular;
+  font-size: 24px;
+  margin: 38px 0 38px 0;
+}
+
+.newMain__title-description-text {
+  font-family: KarlaRegular;
+  font-size: 24px;
+}
+
+.newMain__title-description-message {
+  font-size: 24px;
+  font-family: KarlaMediumSemiBold, sans-serif;
+}
+
+.newMain__form-container {
+  background-color: #fff;
+  width: 462px;
+  height: 441px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.newMain__inputs {
+  list-style-type: none;
+  width: 402px;
+  margin: auto;
+  padding: 30px 30px 0 30px;
+}
+
+.newMain__input {
+  width: 402px;
+  height: 36px;
+  border-radius: 6px;
+  margin-bottom: 38px;
+  border-style: solid;
+  border-width: thin;
+  border-color: lightgray;
+}
+
+.newMain__input::placeholder {
+  color: #000;
+  font-family: KarlaRegular, sans-serif;
+  font-size: 18px;
+}
+
+.newMain__list__inputs {
+  position: relative;
+}
+
+.dateRangePicker__wrapper {
+  position: absolute;
+  z-index: 10;
+  top: 45px;
+  left: -67px;
+  margin-left: 28px;
+}
+
+.newMain__input-header {
+  font-family: KarlaMedium, sans-serif;
+  font-size: 20px;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.newMain__input__activity__title-text {
+  margin: 0;
+}
+
+.newMain__input__activity-text {
+  font-family: KarlaExtraLightItalic;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.newMain__submitButton {
+  margin-top: 35px;
+  position: relative;
+  z-index: 2;
+}
+
+.submitButton {
+  width: 240px;
+  height: 48px;
+  border-radius: 21px;
+  color: #000;
+  background-color: #76D1BC;
+  border-width: thin;
+  font-family: KarlaMedium;
+  font-size: 18px;
+  border: none;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+  background-color: #B9E5DB;
+}
+
+.activity-tags-inside-input {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  min-height: 36px;
+  background-color: white;
+}
+
+.activity-tag-inside {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 16px;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  margin-right: 4px;
+  top: 10px;
+  font-family: KarlaRegular, sans-serif;
+}
+
+.remove-activity-inside {
+  display: inline-flex;
+  background: none;
+  border: none;
+  color: #eee;
+  font-size: 15px;
+  margin-right: 4px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  outline: none;
+}
+
+.activity-input-field {
+  border: none;
+  outline: none;
+  min-width: 120px;
+  flex: 1;
+  padding: 4px;
+  margin-bottom: 4px;
+  width: 402px;
+  padding-left: 10px
+}
+
+.activity-input-field::placeholder {
+  font-family: KarlaRegular, sans-serif;
+  font-size: 18px;
+  color: #000;
+  align-items: center;
+}
+
+.activity-input-field:not(:empty) ~ .activity-input-field::placeholder,
+.activity-tag-inside ~ .activity-input-field::placeholder {
+  color: transparent;
+}
+
+.remove-activity-inside:hover {
+  color: #fff;
+}
+
+.activity-tag {
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 16px;
+  padding: 4px 8px;
+  font-size: 18px;
+  font-family: KarlaRegular, sans-serif;
+}
+
+.remove-activity {
+  background: none;
+  border: none;
+  color: #eee;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  outline: none;
+}
+
+.remove-activity:hover {
+  color: #fff;
+}
+
+.newMain__input:not([id="activity"]) {
+  width: 402px;
+  height: 36px;
+  padding-left: 10px;
+  border-radius: 6px;
+  margin-bottom: 38px;
+  border-style: solid;
+  border-width: thin;
+  border-color: lightgray;
+  font-family: KarlaRegular, sans-serif;
+}
+
+.newMain__input[id="activity"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.newMain__suitcase {
+    position: relative;
+    bottom: 400px;
+    left: 450px;
+    width: 1131px;
+    height: 634px;
+    z-index: 1;
+}
+
+@font-face {
+  font-family: KarlaExtraLightItalic;
+  src: url("../../fonts/Karla-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: KarlaItalic;
+  src: url("../../fonts/Karla-Italic.ttf");
+}
+
+@font-face {
+  font-family: KarlaRegular;
+  src: url("../../fonts/Karla-Regular.ttf");
+}
+
+@font-face {
+  font-family: KarlaMedium;
+  src: url("../../fonts/Karla-Medium.ttf");
+}
+
+@font-face {
+  font-family: KarlaMediumSemiBold;
+  src: url("../../fonts//Karla-SemiBold.ttf");
+}

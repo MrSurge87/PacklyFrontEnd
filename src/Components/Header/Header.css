@@ -1,0 +1,195 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  padding: 0 20px;
+  color: #000;
+  font-family: Cabinet Groestk, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  max-width: 100%;
+}
+
+.header__logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 89px;
+  width: auto;
+}
+
+.header__logo-image {
+  width: 100px;
+  height: 70px;
+}
+
+.header__logo-name {
+  font-family: "KarlaBold", sans-serif;
+  font-size: 64px;
+  line-height: 36px;
+}
+
+.header__avatar-logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header__avatar-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  transition: scale 0.15s linear 0s;
+}
+
+.header__avatar-image:hover {
+  scale: 1.1;
+}
+
+.header__name {
+  color: #fff;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  margin: 0 0 0 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 6px 6px;
+}
+
+.header__button {
+  color: darkgrey;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: 24px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 6px 6px;
+}
+
+.header__button:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  color: white;
+  background-color: darkgrey;
+}
+
+.header__date,
+.header__location {
+  display: flex;
+  justify-content: baseline;
+  font-size: 25px;
+  opacity: 0.8;
+  color: #fff;
+  margin: 0;
+}
+
+.header__buttons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header__time {
+  color: #fff;
+  font-size: 25px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+@font-face {
+  font-family: KarlaBold;
+  src:url(../../fonts/Karla-ExtraBold.ttf);
+}
+
+@media screen and (max-width: 1000px) {
+  .header__date {
+    font-size: 25px;
+  }
+
+  .header__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__button {
+    font-size: 25px;
+  }
+
+  .header__name {
+    font-size: 25px;
+  }
+
+  .header__logo-image {
+    width: 70px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .header__date,
+  .header__location {
+    font-size: 16px;
+  }
+
+  .header__logo-image {
+    width: 60px;
+    height: 40px;
+  }
+
+  .header__button {
+    font-size: 20px;
+  }
+
+  .header__avatar-logo {
+    gap: 0;
+  }
+
+  .header__logo {
+    gap: 10px;
+  }
+
+  .header__time {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 689px) {
+  .header__date,
+  .header__location {
+    width: 100px;
+  }
+
+  .header__logo-image {
+    width: 60px;
+    height: 40px;
+  }
+
+  .header__button {
+    font-size: 20px;
+  }
+
+  .header__avatar-logo {
+    gap: 0;
+  }
+
+  .header__logo {
+    gap: 10px;
+  }
+
+  .header__time {
+    font-size: 16px;
+  }
+}
