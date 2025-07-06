@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PacklyFrontEnd/static/css/main.410ccd54.css",
-    "main.js": "/PacklyFrontEnd/static/js/main.b5c2e162.js",
+    "main.js": "/PacklyFrontEnd/static/js/main.0062e242.js",
     "static/js/488.44f13e05.chunk.js": "/PacklyFrontEnd/static/js/488.44f13e05.chunk.js",
     "static/media/mist-night.mp4": "/PacklyFrontEnd/static/media/mist-night.ed1ba5053c83c08e8078.mp4",
     "static/media/snow-night.mp4": "/PacklyFrontEnd/static/media/snow-night.0bdf263f1f5cd6233fc7.mp4",
@@ -66,11 +66,11 @@
     "static/media/checkmark.svg": "/PacklyFrontEnd/static/media/checkmark.d8132f2ff23dc773fb229914721e43ef.svg",
     "static/media/decrement.svg": "/PacklyFrontEnd/static/media/decrement.2f80247be1eb8d7dcb58d38dd600a582.svg",
     "main.410ccd54.css.map": "/PacklyFrontEnd/static/css/main.410ccd54.css.map",
-    "main.b5c2e162.js.map": "/PacklyFrontEnd/static/js/main.b5c2e162.js.map",
+    "main.0062e242.js.map": "/PacklyFrontEnd/static/js/main.0062e242.js.map",
     "488.44f13e05.chunk.js.map": "/PacklyFrontEnd/static/js/488.44f13e05.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.410ccd54.css",
-    "static/js/main.b5c2e162.js"
+    "static/js/main.0062e242.js"
   ]
 }
