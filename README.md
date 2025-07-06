@@ -1,4 +1,4 @@
-# [TravelWear](https://save-on.github.io/WeatherAppFront/) Requirements Document
+# [Packly](https://save-on.github.io/WeatherAppFront/) Requirements Document
 
 ## Project Overview
 
