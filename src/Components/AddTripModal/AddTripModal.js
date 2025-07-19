@@ -5,7 +5,7 @@ import { useForm } from "../../hooks/useForm.js";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const AddTripModal = ({ isOpen, onClose }) => {
+const AddTripModal = ({ isOpen, onClose, onNewTripAttempt }) => {
   const { values, handleChanges, handleDateChange } = useForm();
   const [isDatePickerVisible, setIsDatePickerVisible] = useState(false);
   const dateInputRef = useRef(null);
@@ -90,6 +90,7 @@ const AddTripModal = ({ isOpen, onClose }) => {
         : null,
       activities: activities.join(", "),
     };
+    onNewTripAttempt(tripData);
     navigate("/mytrips");
   };
 
