@@ -91,6 +91,7 @@ const AddTripModal = ({ isOpen, onClose, onNewTripAttempt }) => {
       activities: activities.join(", "),
     };
     onNewTripAttempt(tripData);
+    onClose();
     navigate("/mytrips");
   };
 
