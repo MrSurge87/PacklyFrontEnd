@@ -688,6 +688,7 @@ function App() {
           isLoadingTrips={isLoadingTrips}
           onSelectTrip={handleSelectTrip}
           handleOpenAddTripModal={handleOpenAddTripModal}
+          onNewTripAttempt={handleNewTripAttempt}
         />
         <Routes>
           <Route
