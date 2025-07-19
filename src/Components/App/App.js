@@ -803,6 +803,7 @@ function App() {
           isOpen={activeModal === "addTripModal"}
           onClose={handleCloseModal}
           handleOpenAddTripModal={handleOpenAddTripModal}
+          onNewTripAttempt={handleNewTripAttempt}
           />
         )}
 
