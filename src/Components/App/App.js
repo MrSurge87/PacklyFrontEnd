@@ -218,7 +218,7 @@ function App() {
 
   const handleOpenAddTripModal = () => {
     setActiveModal("addTripModal");
-  }
+  };
 
   const registerUser = (values) => {
     console.log("Values: ", values);
@@ -243,8 +243,6 @@ function App() {
       })
       .finally(() => setIsLoading(false));
   };
- 
- 
 
   const loginUser = (user) => {
     setIsLoading(true);
@@ -563,12 +561,9 @@ function App() {
   }, [loggedIn]);
 
   useEffect(() => {
-    
     const token = checkLoggedIn();
-    
 
     if (token) {
-     
       getUserData(token)
         .then((res) => {
           setLoggedIn(true);
@@ -577,7 +572,6 @@ function App() {
             localStorage.getItem("userSavedTrips") || "[]"
           );
           setUserTrips(storedTrips);
-     
         })
         .catch((err) => {
           console.log(
@@ -715,7 +709,6 @@ function App() {
                 userTrips={userTrips}
                 onSelectTrip={handleSelectTrip}
                 onTripDeleted={fetchAllUserTrips}
-                
               />
               //</ProtectedRoute>
             }
@@ -799,10 +792,11 @@ function App() {
         <Footer />
 
         {activeModal === "addTripModal" && (
-          <AddTripModal 
-          isOpen={activeModal === "addTripModal"}
-          onClose={handleCloseModal}
-          handleOpenAddTripModal={handleOpenAddTripModal}
+          <AddTripModal
+            isOpen={activeModal === "addTripModal"}
+            onClose={handleCloseModal}
+            handleOpenAddTripModal={handleOpenAddTripModal}
+            onNewTripAttempt={handleNewTripAttempt}
           />
         )}
 
